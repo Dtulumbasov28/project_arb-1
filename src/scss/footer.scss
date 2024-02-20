@@ -1,0 +1,65 @@
+.footer {
+	&__container {
+	}
+
+	&__body {
+		padding: 15px 0;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		@media (max-width: $mobile) {
+			flex-wrap: wrap;
+		}
+
+		@media (max-width: $mobileSmall) {
+			flex-direction: column;
+		}
+	}
+
+	&__logo {
+		width: 100px;
+
+		& img {
+			width: 100px;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		font-size: 22px;
+		font-weight: 600;
+
+		@media (max-width: $mobile) {
+			margin-left: auto;
+		}
+
+		@media (max-width: $mobileSmall) {
+			margin-left: unset;
+		}
+	}
+
+	&__number {
+	}
+
+	&__email {
+	}
+
+	&__address {
+		text-align: center;
+		margin: 0 auto;
+		line-height: 1.5;
+
+		@media (max-width: $mobile) {
+			width: 100%;
+			order: 1;
+		}
+	}
+
+	&__address-link {
+	}
+}

@@ -1,0 +1,57 @@
+// Заголовки, общие БЄМ блоки и проче...
+section {
+	padding: 50px 0;
+}
+.button {
+	font-size: 22px;
+	font-weight: 600;
+	white-space: nowrap;
+
+	display: flex;
+	width: fit-content;
+	padding: 15px 30px;
+	border-radius: $borderRadius;
+	overflow: hidden;
+	cursor: pointer;
+
+	&__white {
+		color: $colorOne;
+		background-color: $colorTwo;
+	}
+
+	&__black {
+		color: $colorTwo;
+		background-color: $colorOne;
+	}
+}
+.menu-open {
+	& .menu__nav {
+		top: 0;
+		z-index: 10;
+	}
+}
+.privacy,
+.terms {
+	line-height: 1.5;
+
+	h1 {
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	h2 {
+		font-size: 26px;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+	h3 {
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+	p {
+		margin-bottom: 10px;
+	}
+}
